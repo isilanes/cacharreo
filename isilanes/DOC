@@ -1,0 +1,44 @@
+--- Receta ---
+
+El input contiene 3 + 1 + N líneas (aparentemente N = 372400)
+
+Las tres primeras líneas tienen M columnas. La primera tiene M valores de X, la segunda M valores de Y y la tercera M valores de z. Estos son los valores XYZ de M puntos (sensores), que hay que guardar.
+
+De la cuarta línea en adelante hay N líneas que contienen lo siguiente:
+
+t (blah) (blah) (blah) ...
+
+donde "t" es un número que representa un instante de tiempo. Hay 5151 elementos "(blah)", donde "blah" es un trío de números. Aparentemente el "blah" se guarda tal cual. Aparentemente el número de "blah"s es justo el M mencionado antes.
+
+--- Consejos ---
+
+* Conoce tu input
+
+* Usa git/svn
+
+* Haz tests!!
+
+Por ejemplo:
+
+$ head U > test.dat
+
+* Haz benchmarks!!
+
+* Usa herramientas adecuadas (grep, awk, ...)
+
+* Ejecuta en memoria sólo lo que pueda y tenga que ejecutarse en memoria:
+
+En vez de:
+
+f = open(fn, 'r')
+data = f.read().split('\n')
+for line in data:
+
+usa:
+
+f = open(fn, 'r')
+for line in f:
+
+* Comentarios siempre en inglés
+
+* [01] el nt = min(len(t), int(nvel/nx) se hacía porque leías la cuarta línea, que había que saltarse.
