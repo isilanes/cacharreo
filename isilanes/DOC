@@ -42,3 +42,20 @@ for line in f:
 * Comentarios siempre en inglés
 
 * [01] el nt = min(len(t), int(nvel/nx) se hacía porque leías la cuarta línea, que había que saltarse.
+
+* Mejor:
+
+fn = receta
+f = open(fn, 'r')
+
+que:
+
+f = open(receta, 'r')
+
+* Mejor:
+
+fn = 'fichero_{0:04d}.dat'.format(i)
+
+que:
+
+fn = 'fichero_{0}.dat'.format(i)
