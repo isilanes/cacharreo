@@ -36,3 +36,5 @@ nosetests.xml
 
 # Other:
 isilanes/test.dat
+isilanes/out_*
+isilanes/*.out
