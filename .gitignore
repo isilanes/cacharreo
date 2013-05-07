@@ -38,3 +38,4 @@ nosetests.xml
 isilanes/test.dat
 isilanes/out_*
 isilanes/*.out
+*.swp
